@@ -3,7 +3,7 @@ export const movies = [
         id: 1,
         genre: "horrible",
         title: "The Conjuring 3",
-        image: "C:\\Users\\home\\Downloads\\Conj3.jpg",
+        image: "https://w0.peakpx.com/wallpaper/913/387/HD-wallpaper-the-conjuring-3-james-wan-the-conjuring-thumbnail.jpg",
         description: "The Conjuring 3 is a horror movie about paranormal investigators Ed and Lorraine Warren as they confront a new case involving a murder suspect who claims demonic possession as his defense."
     },
     {
@@ -17,7 +17,7 @@ export const movies = [
         id: 3,
         genre: "drama",
         title: "Friend Request",
-        image: "https://lh3.googleusercontent.com/proxy/hDaWqBcBOKGwePcUXrZoDL-e4cwR56gi_Uw1v2LWsrzNQNG2GSmeyoyoX2KIN6fHTm9rDfsKz5I69T-Bsnc_4MjQrDSi-Us_noCqrWmv1IfPA32uDQDkVFhGCXHCkJJ9b3HiN9TKxDoddRM",
+        image: "https://m.media-amazon.com/images/S/pv-target-images/ade34bfecb72aa7aa1ed127ad07cb025ce2434683e794258398e72931650eb98.jpg",
         description: "A college student unfriends a lonely classmate on social media and finds herself fighting a demonic presence."
     },
     {
