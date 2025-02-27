@@ -168,7 +168,44 @@ export const series = [
         id: 4,
         genre: "drama",
         title: "The Walking Dead: Daryl Dixon",
-        image: "https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/66df20df-c828-42e1-82be-e0f20a1e54c4/Screenshot+%28383%29.png",
+        image: "https://i.ytimg.com/vi/uOFT_4SozJA/maxresdefault.jpg",
         description: "A spin-off of The Walking Dead, focusing on the character Daryl Dixon."
+    },
+    {
+        "id": 5,
+        "title": "Breaking Bad",
+        "image": "https://ih1.redbubble.net/image.5264183368.5628/raf,360x360,075,t,fafafa:ca443f4786.jpg",
+        "description": "A high school chemistry teacher turned methamphetamine kingpin partners with a former student to build a drug empire, facing law enforcement, cartels, and his own moral downfall."
+    },
+    {
+        "id": 6,
+        "title": "Better Call Saul",
+        "image": "https://ih1.redbubble.net/image.4601026530.6524/flat,750x,075,f-pad,750x1000,f8f8f8.jpg",
+        "description": "A prequel to *Breaking Bad*, following the transformation of Jimmy McGill, a struggling lawyer, into the cunning criminal attorney Saul Goodman."
+    },
+    {
+        "id": 7,
+        "title": "Dexter",
+        "image": "https://w0.peakpx.com/wallpaper/24/744/HD-wallpaper-dexter-season-6-6-awesome-dexter-showtime-season-thumbnail.jpg",
+        "description": "A forensic blood spatter analyst for Miami Metro Police leads a double life as a vigilante serial killer, hunting down criminals who escape justice."
+    },
+    {
+        "id": 8,
+        "title": "Criminality Series: Blood Ties",
+        "image": "https://resizing.flixster.com/jzy4EE179l92PUGYLAzqdCQ3iAw=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p23660225_b_v4_aa.jpg",
+        "description": "Family and crime collide when two brothers find themselves on opposite sides of the law."
+    },
+    {
+        "id": 9,
+        "title": "Fargo",
+        "image": "https://wallpapersok.com/images/thumbnail/fargo-series-character-25fqi1r88g0l7zav.webp",
+        "description": "A darkly comedic crime anthology inspired by the Coen Brothers' film, following bizarre crimes, ruthless criminals, and unlikely heroes across different timelines."
+    },
+    {
+        "id": 10,
+        "title": "Criminality Series: Rogue Justice",
+        "image": "https://i.ytimg.com/vi/ymSKZt-hNlY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLARdMOrNm4Zeqwd-nXOu-VarJSHAA",
+        "description": "A former cop turned vigilante takes justice into his own hands in a city where the law has failed."
     }
+
 ];
