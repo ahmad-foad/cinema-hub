@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+
+        searchInput {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ff6347;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .searchInput::placeholder {
+            color: #aaa;
+        }
+
+        .searchResults {
+            margin-top: 20px;
+        }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1.2rem;
+            margin-right: 20px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ff6347;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 40px;
+            text-align: center;
+            color: #ff6347;
+            text-transform: uppercase;
+        }
+
+        .card-container {
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img-top {
+            object-fit: cover;
+            height: 250px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: #ff6347;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff4500;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* New styles for the Contact section */
+        .contact-section {
+            background-color: #1e1e1e;
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            color: #ff6347;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contact-icons a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-icons a:hover {
+            color: #ff6347;
+        }
+
+        .contact-icons img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="Card.html">Cinema Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Card.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#movies">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#series">Series</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+
+        <h2 id="movies" class="section-title">Movies</h2>
+
+        <h3 class="section-title">Horrible Movies</h3>
+        <div class="row card-container">
+            <!-- Movie 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="C:\Users\home\Downloads\Conj3.jpg" class="card-img-top" alt="The Conjuring 3">
+                    <div class="card-body">
+                        <h5 class="card-title">The Conjuring 3</h5>
+                        <a href="Movie.html?id=1&type=movie" class="btn btn-primary ">See Online</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/horror-movie-poster-design-template-0a593d6547564a095f6166f10de24a4b_screen.jpg?ts=1679656233 "
+                        class="card-img-top" alt="Horror Movie 2">
+                    <div class="card-body">
+                        <h5 class="card-title">A Night For The Tears</h5>
+                        <a href="Movie.html?id=2&type=movie" class="btn btn-primary" >See Online</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 3 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://lh3.googleusercontent.com/proxy/hDaWqBcBOKGwePcUXrZoDL-e4cwR56gi_Uw1v2LWsrzNQNG2GSmeyoyoX2KIN6fHTm9rDfsKz5I69T-Bsnc_4MjQrDSi-Us_noCqrWmv1IfPA32uDQDkVFhGCXHCkJJ9b3HiN9TKxDoddRM"
+                        class="card-img-top" alt="Horror Movie 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Friend Request</h5>
+                        <a href="Movie.html?id=3&type=movie" class="btn btn-primary ">See Online</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 4 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://resizing.flixster.com/tuVwiMU5kDChSopPvFpgUJCIPuI=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p14298430_v_h9_aa.jpg"
+                        class="card-img-top" alt="Horror Movie 4">
+                    <div class="card-body">
+                        <h5 class="card-title">TERRIFIER</h5>
+                        <a href="Movie.html?id=4&type=movie" class="btn btn-primary " >See Online</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 5 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://iheardthebookwasbetter2.wordpress.com/wp-content/uploads/2017/02/the-visit.jpg"
+                        class="card-img-top" alt="Horror Movie 5">
+                    <div class="card-body">
+                        <h5 class="card-title">The Visit</h5>
+                        <a href="Movie.html?id=5&type=movie" class="btn btn-primary ">See Online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="section-title">Western Movies</h3>
+        <div class="row card-container">
+            <!-- Movie 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://w0.peakpx.com/wallpaper/314/738/HD-wallpaper-the-good-the-bad-the-ugly-1966-clint-eastwood-movie-film-1966-classic-the-good-the-bad-and-the-ugly-western-thumbnail.jpg"
+                        class="card-img-top" alt="Western Movie 1">
+                    <div class="card-body">
+                        <h5 class="card-title">The Good , The Bad And The Ugly</h5>
+                        <a href="Movie.html?id=6&type=movie" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://wallpapercave.com/wp/wp5705834.jpg" class="card-img-top" alt="Western Movie 2">
+                    <div class="card-body">
+                        <h5 class="card-title">For A Few Dollars More</h5>
+                        <a href="Movie.html?id=7&type=movie" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 3 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://sothebys-md.brightspotcdn.com/dims4/default/110e80e/2147483647/strip/true/crop/2000x1512+0+0/resize/385x291!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2Fbd%2F0b%2Ffee10f67494b95636c4d0334f23f%2F260l20895-bj7yj.jpg"
+                        class="card-img-top" alt="Western Movie 3">
+                    <div class="card-body">
+                        <h5 class="card-title">A Fisful Of Dollars</h5>
+                        <a href="Movie.html?id=8&type=movie" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 4 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYWVlN2EyNjgtZmUyYS00NTk0LThkZTctYWJhNTdmMzc4MTEzXkEyXkFqcGc@._V1_.jpg"
+                        class="card-img-top" alt="Western Movie 4">
+                    <div class="card-body">
+                        <h5 class="card-title">The Great Silence</h5>
+                        <a href="Movie.html?id=9&type=movie" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 5 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/UFoCCUhEs_M/maxresdefault.jpg" class="card-img-top"
+                        alt="Western Movie 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Sanctified</h5>
+                        <a href="Movie.html?id=10&type=movie" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="section-title">Criminality Movies</h3>
+        <div class="row card-container">
+            <!-- Movie 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://www.thegardencinema.co.uk/wp-content/uploads/films/The-Godfather-Part-II-742x1024.jpg"
+                        class="card-img-top" alt="The God Father">
+                    <div class="card-body">
+                        <h5 class="card-title">The God Father II</h5>
+                        <a href="Movie.html?id=11&type=movie" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://pbs.twimg.com/media/Fw6VTdmXgAELdEx.jpg:large" class="card-img-top"
+                        alt="Criminal Movie 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Se7en</h5>
+                        <a href="Movie.html?id=12&type=movie" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 3 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7SWs707DaPCm7xG4gKIHyXMfq9zOKOgFxzA&s"
+                        class="card-img-top" alt="Criminal Movie 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Trap</h5>
+                        <a href="Movie.html?id=13&type=movie" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 4 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://www.mauvais-genres.com/18484-thickbox_default/don-t-breathe-movie-poster-15x21-in-2016-fede-alvarez-evil-dead-director-.jpg"
+                        class="card-img-top" alt="Criminal Movie 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Don`t Breath</h5>
+                        <a href="Movie.html?id=14&type=movie" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 5 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy0BJBY1bCQViu2BAGv7Snnsz1Xca6XMbQyg&s"
+                        class="card-img-top" alt="Criminal Movie 5">
+                    <div class="card-body">
+                        <h5 class="card-title">I See You</h5>
+                        <a href="Movie.html?id=15&type=movie" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="section-title">Action Movies</h3>
+        <div class="row card-container">
+            <!-- Movie 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/514zBLkyJcL.jpg" class="card-img-top"
+                        alt="Scientific Movie 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Interstellar</h5>
+                        <a href="Movie.html?id=16&type=movie" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://www.originalposter.co.uk/uploads/171764552593232_mainphotos.jpg"
+                        class="card-img-top" alt="Scientific Movie 2">
+                    <div class="card-body">
+                        <h5 class="card-title">The Lord of the Rings:<h6>The Fellowship of the Ring</h6>
+                        </h5>
+                        <a href="Movie.html?id=17&type=movie" class="btn btn-primary">See Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 3 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxoizjC1WdcbPYnzIypj0hflUYm5eldY-Xkw&s"
+                        class="card-img-top" alt="Scientific Movie 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Deadpool & Wolverine</h5>
+                        <a href="Movie.html?id=18&type=movie" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 4 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://www.vintagemovieposters.co.uk/wp-content/uploads/2015/01/IMG_5848.jpeg"
+                        class="card-img-top" alt="Scientific Movie 4">
+                    <div class="card-body">
+                        <h5 class="card-title">The Dark Night</h5>
+                        <a href="Movie.html?id=19&type=movie" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 5 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://i.etsystatic.com/17257718/r/il/adc110/2428396175/il_fullxfull.2428396175_pra7.jpg"
+                        class="card-img-top" alt="Scientific Movie 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Inception</h5>
+                        <a href="Movie.html?id=20&type=movie" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 id="series" class="section-title mt-5">Series</h1>
+
+        <h3 class="section-title">Horrible Series</h3>
+        <div class="row card-container">
+            <!-- Series 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://fr.web.img6.acsta.net/img/7f/5b/7f5b275c23162a85b46befa8bba36176.jpg"
+                        class="card-img-top" alt="Horror Series 1">
+                    <div class="card-body">
+                        <h5 class="card-title">From</h5>
+                        <a href="Movie.html?id=1&type=series" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Series 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://wallpapersok.com/images/thumbnail/fear-the-walking-dead-season-1-poster-sq7ycuadngbtdafo.jpg"
+                        class="card-img-top" alt="Horror Series 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Fear the Walking Dead</h5>
+                        <a href="#" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Series 3 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://dawnofthelead.com/wp-content/uploads/2012/10/image_twd_poster1.jpg?w=405&h=303"
+                        class="card-img-top" alt="Horror Series 2">
+                    <div class="card-body">
+                        <h5 class="card-title">The Walking Dead</h5>
+                        <a href="#" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/66df20df-c828-42e1-82be-e0f20a1e54c4/Screenshot+%28383%29.png"
+                        class="card-img-top" alt="Horror Series 2">
+                    <div class="card-body">
+                        <h5 class="card-title">The Walking Dead: Daryl Dixon</h5>
+                        <a href="#" class="btn btn-primary">See Online</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="horror_series2.jpg" class="card-img-top" alt="Horror Series 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Horror Series 2</h5>
+                        <a href="#" class="btn btn-primary">Download Subtitle</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="horror_series2.jpg" class="card-img-top" alt="Horror Series 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Horror Series 2</h5>
+                        <a href="#" class="btn btn-primary">Download Subtitle</a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="section-title">Western Series</h3>
+            <div class="row card-container">
+                <!-- Series 1 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="horror_series1.jpg" class="card-img-top" alt="Horror Series 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Horror Series 1</h5>
+                            <a href="#" class="btn btn-primary">Download Subtitle</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Series 2 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="horror_series2.jpg" class="card-img-top" alt="Horror Series 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Horror Series 2</h5>
+                            <a href="#" class="btn btn-primary">Download Subtitle</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Series 3 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="horror_series2.jpg" class="card-img-top" alt="Horror Series 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Horror Series 2</h5>
+                            <a href="#" class="btn btn-primary">Download Subtitle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="horror_series2.jpg" class="card-img-top" alt="Horror Series 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Horror Series 2</h5>
+                            <a href="#" class="btn btn-primary">Download Subtitle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="horror_series2.jpg" class="card-img-top" alt="Horror Series 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Horror Series 2</h5>
+                            <a href="#" class="btn btn-primary">Download Subtitle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="horror_series2.jpg" class="card-img-top" alt="Horror Series 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Horror Series 2</h5>
+                            <a href="#" class="btn btn-primary">Download Subtitle</a>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="section-title">Criminality Series</h3>
+                <div class="row card-container">
+                    <!-- Series 1 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="horror_series1.jpg" class="card-img-top" alt="Horror Series 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Horror Series 1</h5>
+                                <a href="#" class="btn btn-primary">Download Subtitle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Series 2 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="horror_series2.jpg" class="card-img-top" alt="Horror Series 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Horror Series 2</h5>
+                                <a href="#" class="btn btn-primary">Download Subtitle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Series 3 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="horror_series2.jpg" class="card-img-top" alt="Horror Series 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Horror Series 2</h5>
+                                <a href="#" class="btn btn-primary">Download Subtitle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="horror_series2.jpg" class="card-img-top" alt="Horror Series 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Horror Series 2</h5>
+                                <a href="#" class="btn btn-primary">Download Subtitle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="horror_series2.jpg" class="card-img-top" alt="Horror Series 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Horror Series 2</h5>
+                                <a href="#" class="btn btn-primary">Download Subtitle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="horror_series2.jpg" class="card-img-top" alt="Horror Series 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Horror Series 2</h5>
+                                <a href="#" class="btn btn-primary">Download Subtitle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="section-title">Scientific Series</h3>
+                    <div class="row card-container">
+                        <!-- Series 1 -->
+                        <div class="col-md-3 mb-4">
+                            <div class="card">
+                                <img src="horror_series1.jpg" class="card-img-top" alt="Horror Series 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Horror Series 1</h5>
+                                    <a href="#" class="btn btn-primary">Download Subtitle</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Series 2 -->
+                        <div class="col-md-3 mb-4">
+                            <div class="card">
+                                <img src="horror_series2.jpg" class="card-img-top" alt="Horror Series 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Horror Series 2</h5>
+                                    <a href="#" class="btn btn-primary">Download Subtitle</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Series 3 -->
+                        <div class="col-md-3 mb-4">
+                            <div class="card">
+                                <img src="horror_series2.jpg" class="card-img-top" alt="Horror Series 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Horror Series 2</h5>
+                                    <a href="#" class="btn btn-primary">Download Subtitle</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <div class="card">
+                                <img src="horror_series2.jpg" class="card-img-top" alt="Horror Series 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Horror Series 2</h5>
+                                    <a href="#" class="btn btn-primary">Download Subtitle</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <div class="card">
+                                <img src="horror_series2.jpg" class="card-img-top" alt="Horror Series 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Horror Series 2</h5>
+                                    <a href="#" class="btn btn-primary">Download Subtitle</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <div class="card">
+                                <img src="horror_series2.jpg" class="card-img-top" alt="Horror Series 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Horror Series 2</h5>
+                                    <a href="#" class="btn btn-primary">Download Subtitle</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Section -->
+                        <section id="contact" class="contact-section">
+                            <h2>Contact</h2>
+                            <div class="contact-icons">
+                                <a href="https://discord.com/invite/yourdiscordlink" target="_blank">
+                                    <img src="C:\Users\home\Downloads\discord.svg" alt="Discord Logo">
+                                    Discord
+                                </a>
+                                <a href="mailto:youremail@example.com">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Email Logo">
+                                    Email
+                                </a>
+                                <a href="https://t.me/yourtelegramlink" target="_blank">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
+                                        alt="Telegram Logo">
+                                    Telegram
+                                </a>
+                            </div>
+                        </section>
+
+                        <footer>
+                            <p>&copy; 2025 Cinema Hub. All rights reserved.</p>
+                        </footer>
+
+
+</body>
+<script>
+    // Add an event listener to all "See Online" buttons
+    document.querySelectorAll('.see-online').forEach(button => {
+        button.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+
+            // Get the movie ID from the data-id attribute
+            const movieId = this.getAttribute('data-id');
+
+            // Redirect to the movie details page with the movie ID as a URL parameter
+            window.location.href = `movie.html?id=${movieId}`;
+        });
+    });
+</script>
+
+</html>
+
+</html>
