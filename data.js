@@ -83,7 +83,7 @@ export const series = [
     },
     {
         "id": 10,
-        "title": "Criminality Series: Rogue Justice",
+        "title": " Rogue Justice",
         "image": "https://i.ytimg.com/vi/ymSKZt-hNlY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLARdMOrNm4Zeqwd-nXOu-VarJSHAA",
         "description": "A former cop turned vigilante takes justice into his own hands in a city where the law has failed.",
         "trailerUrl": "https://www.youtube.com/embed/FqEiLdxfPXo?si=948WwAJBNFDWV9NH"

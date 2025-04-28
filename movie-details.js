@@ -21,6 +21,7 @@ if (selectedItem) {
     document.getElementById('details-image').src = selectedItem.image;
     document.getElementById('details-description').textContent = selectedItem.description;
     document.getElementById('trailer').src = selectedItem.trailerUrl;
-    document.getElementById('details-title').textContent = "Item not found";
+    
 }
+else {document.getElementById('details-title').textContent = "Item not found";}
 
