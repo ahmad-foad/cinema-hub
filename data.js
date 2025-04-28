@@ -65,7 +65,7 @@ export const series = [
         "image": "https://w0.peakpx.com/wallpaper/24/744/HD-wallpaper-dexter-season-6-6-awesome-dexter-showtime-season-thumbnail.jpg",
         "description": "A forensic blood spatter analyst for Miami Metro Police leads a double life as a vigilante serial killer, hunting down criminals who escape justice."
         ,
-        "trailerUrl": "https://www.youtube.com/embed/1UJz0O2NjOo?si=ppOQEwI1lwhLQpvd"
+        "trailerUrl": "https://www.youtube.com/embed/BfBnqwnXxY8?si=uuU_jfpN5cdaF9tr"
     },
     {
         "id": 8,
