@@ -21,7 +21,15 @@ if (selectedItem) {
     document.getElementById('details-image').src = selectedItem.image;
     document.getElementById('details-description').textContent = selectedItem.description;
     document.getElementById('trailer').src = selectedItem.trailerUrl;
-    
+
 }
-else {document.getElementById('details-title').textContent = "Item not found";}
+else { document.getElementById('details-title').textContent = "Item not found"; }
+
+const button = document.getElementById("change-color");
+
+button.addEventListener("click", () => {
+    document.documentElement.classList.toggle("light");
+    localStorage.setItem("theme", document.documentElement.classList.contains("light") ? "light" : "dark")
+});
+
 

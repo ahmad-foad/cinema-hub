@@ -1,5 +1,127 @@
 export const movies = [
-   
+    {
+        id: 1,
+        genre: "horror",
+        title: "The Conjuring 3",
+        image: "https://w0.peakpx.com/wallpaper/913/387/HD-wallpaper-the-conjuring-3-james-wan-the-conjuring-thumbnail.jpg",
+        description: "Paranormal investigators Ed and Lorraine Warren take on one of their most sensational cases: the trial of Arne Cheyenne Johnson, who claims demonic possession as a defense.",
+        trailerUrl: "https://www.youtube.com/embed/h9Q4zZS2v1k?si=4W1SYV3YAUGrMsGj",
+    },
+    {
+        id: 2,
+        genre: "drama",
+        title: "Alien",
+        image: "https://i.ytimg.com/vi/8VnOaJFPXG8/maxresdefault.jpg",
+        description: "When the crew of the commercial space tug Nostromo answers a distress call from a distant planet, they discover a deadly extraterrestrial life form. One by one.",
+        trailerUrl: "https://www.youtube.com/embed/jQ5lPt9edzQ?si=97V0DNmcDDANxzLZ"
+    },
+
+    {
+        id: 3,
+        genre: "drama",
+        title: "Friend Request",
+        image: "https://m.media-amazon.com/images/S/pv-target-images/ade34bfecb72aa7aa1ed127ad07cb025ce2434683e794258398e72931650eb98.jpg",
+        description: "A college student unfriends a lonely classmate on social media and finds herself fighting a demonic presence.",
+        trailerUrl: "https://www.youtube.com/embed/llEP88wJqiY?si=400EZPuhb5sLtJ4V"
+    },
+    {
+        id: 4,
+        genre: "drama",
+        title: "TERRIFIER",
+        image: "https://resizing.flixster.com/tuVwiMU5kDChSopPvFpgUJCIPuI=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p14298430_v_h9_aa.jpg",
+        description: "A maniacal clown terrorizes three young women on Halloween night and anyone else who stands in his way.",
+        trailerUrl: "https://www.youtube.com/embed/fN5j1MtGO2Q?si=Z9Y6GQkUUgh9C-t8"
+    },
+    {
+        id: 5,
+        genre: "drama",
+        title: "The Visit",
+        image: "https://iheardthebookwasbetter2.wordpress.com/wp-content/uploads/2017/02/the-visit.jpg",
+        description: "Two siblings visit their grandparents for a week, only to discover that something is terribly wrong.",
+        trailerUrl: "https://www.youtube.com/embed/76yBTNDB6vU?si=E7sQEEmRDa-GtJ65"
+    },
+    {
+        id: 6,
+        genre: "drama",
+        title: "The Good, The Bad And The Ugly",
+        image: "https://w0.peakpx.com/wallpaper/314/738/HD-wallpaper-the-good-the-bad-the-ugly-1966-clint-eastwood-movie-film-1966-classic-the-good-the-bad-and-the-ugly-western-thumbnail.jpg",
+        description: "A classic Western about three gunslingers competing to find a fortune in buried Confederate gold.",
+        trailerUrl: "https://www.youtube.com/embed/5IzCZMB35Oc?si=FNjWk10nGVG6Ehkn"
+    },
+    {
+        id: 7,
+        genre: "drama",
+        title: "For A Few Dollars More",
+        image: "https://wallpapercave.com/wp/wp5705834.jpg",
+        description: "Two bounty hunters team up to track down a ruthless outlaw in this iconic Western.",
+        trailerUrl: "https://www.youtube.com/embed/bNt9NcLteoU?si=l8aN2TtkTUcn51LR"
+    },
+    {
+        id: 8,
+        genre: "drama",
+        title: "A Fistful Of Dollars",
+        image: "https://sothebys-md.brightspotcdn.com/dims4/default/110e80e/2147483647/strip/true/crop/2000x1512+0+0/resize/385x291!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2Fbd%2F0b%2Ffee10f67494b95636c4d0334f23f%2F260l20895-bj7yj.jpg",
+        description: "A wandering gunfighter plays two rival families against each other in a small town.",
+        trailerUrl: "https://www.youtube.com/embed/aEkjT5A9iKc?si=3v0MFemGzuNzbCOf"
+    },
+    {
+        id: 9,
+        genre: "drama",
+        title: "The Great Silence",
+        image: "https://m.media-amazon.com/images/M/MV5BYWVlN2EyNjgtZmUyYS00NTk0LThkZTctYWJhNTdmMzc4MTEzXkEyXkFqcGc@._V1_.jpg",
+        description: "A mute gunslinger seeks revenge in this gritty Western set in the snowy mountains.",
+        trailerUrl: "https://www.youtube.com/embed/nMrhQp35uUo?si=z9QvA3_cZoRJh6et"
+    },
+    {
+        id: 10,
+        genre: "drama",
+        title: "Sanctified",
+        image: "https://i.ytimg.com/vi/UFoCCUhEs_M/maxresdefault.jpg",
+        description: "A Western tale of redemption and justice in a lawless land.",
+        trailerUrl: "https://www.youtube.com/embed/UFoCCUhEs_M?si=50PKkEHZ1yx7jzMk"
+    },
+    {
+        id: 11,
+        genre: "drama",
+        title: "The Godfather II",
+        image: "https://www.thegardencinema.co.uk/wp-content/uploads/films/The-Godfather-Part-II-742x1024.jpg",
+        description: "The sequel to The Godfather, following the rise of Michael Corleone as the head of the Corleone family.",
+        trailerUrl: "https://www.youtube.com/embed/OA1ij0alE0w?si=FsedfvqNOwQEbttN"
+    },
+    {
+        id: 12,
+        genre: "drama",
+        title: "Se7en",
+        image: "https://pbs.twimg.com/media/Fw6VTdmXgAELdEx.jpg:large",
+        description: "Two detectives hunt a serial killer who uses the seven deadly sins as his motives.",
+        trailerUrl: "https://www.youtube.com/embed/KPOuJGkpblk?si=99ovUpNvg10xZa-6"
+    },
+    {
+        id: 13,
+        genre: "drama",
+        title: "Trap",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7SWs707DaPCm7xG4gKIHyXMfq9zOKOgFxzA&s",
+        description: "A psychological thriller about a man caught in a web of deception and danger.",
+        trailerUrl: "https://www.youtube.com/embed/hJiPAJKjUVg?si=UE0cDuJjGEE2ezW5"
+    },
+    {
+        id: 14,
+        genre: "drama",
+        title: "Don't Breathe",
+        image: "https://www.mauvais-genres.com/18484-thickbox_default/don-t-breathe-movie-poster-15x21-in-2016-fede-alvarez-evil-dead-director-.jpg",
+        description: "A group of thieves break into a blind man's house, only to discover he is far more dangerous than they expected.",
+        trailerUrl: "https://www.youtube.com/embed/76yBTNDB6vU?si=QXChjCs2_Gvl2usU"
+    },
+    {
+        id: 15,
+        genre: "drama",
+        title: "I See You",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy0BJBY1bCQViu2BAGv7Snnsz1Xca6XMbQyg&s",
+        description: "A psychological thriller about a family haunted by a mysterious presence.",
+        trailerUrl: "https://www.youtube.com/embed/1z3bGnYhMis?si=DTclZx-ujFYtDt35"
+    },
+
+
     {
         id: 16,
         genre: "drama",
@@ -11,7 +133,7 @@ export const movies = [
     {
         id: 17,
         genre: "drama",
-        title: "The Lord of the Rings: The Fellowship of the Ring",
+        title: "The Lord of the Rings",
         image: "https://www.originalposter.co.uk/uploads/171764552593232_mainphotos.jpg",
         description: "The first installment in the epic Lord of the Rings trilogy, following Frodo and his companions on their quest to destroy the One Ring.",
         trailerUrl: "https://www.youtube.com/embed/V75dMMIW2B4?si=kuHpHjRyoQsEC7BA",
@@ -44,7 +166,40 @@ export const movies = [
 
 // Sample data for series
 export const series = [
-   
+    {
+        id: 1,
+        genre: "drama",
+        title: "From",
+        image: "https://fr.web.img6.acsta.net/img/7f/5b/7f5b275c23162a85b46befa8bba36176.jpg",
+        description: "From is a horror series about a mysterious town that traps anyone who enters.",
+        trailerUrl: "https://www.youtube.com/embed/pDHqAj4eJcM?si=x-GDqwC6HT36L2q8"
+
+    },
+    {
+        id: 2,
+        genre: "drama",
+        title: "Fear the Walking Dead",
+        image: "https://wallpapersok.com/images/thumbnail/fear-the-walking-dead-season-1-poster-sq7ycuadngbtdafo.jpg",
+        description: "A spin-off of The Walking Dead, focusing on the early days of the zombie apocalypse.",
+        trailerUrl: "https://www.youtube.com/embed/yzXglr5bc3w?si=8Qe4iBcMG6wTFuDc"
+    },
+    {
+        id: 3,
+        genre: "drama",
+        title: "The Walking Dead",
+        image: "https://dawnofthelead.com/wp-content/uploads/2012/10/image_twd_poster1.jpg?w=405&h=303",
+        description: "A group of survivors tries to stay alive in a world overrun by zombies.",
+        trailerUrl: "https://www.youtube.com/embed/sfAc2U20uyg?si=_3Tqyfa1MTOrfOuE"
+    },
+    {
+        id: 4,
+        genre: "drama",
+        title: "The Walking Dead: Daryl Dixon",
+        image: "https://i.ytimg.com/vi/uOFT_4SozJA/maxresdefault.jpg",
+        description: "A spin-off of The Walking Dead, focusing on the character Daryl Dixon.",
+        trailerUrl: "https://www.youtube.com/embed/iTOaFootkSk?si=pcwKrRdqngHMohhC"
+    },
+
     {
         "id": 5,
         "title": "Breaking Bad",
@@ -100,7 +255,7 @@ export const series = [
         "title": "Prison Break",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZZqCxEsf9q8MDL907N94a3HHa4DSLdZZrWA&s",
         "description": "A man intentionally gets imprisoned to break his wrongly accused brother out, leading to a thrilling escape and high-stakes conspiracies.",
-        "trailerUrl": "https://www.youtube.com/embed/AL9zLctDJaU?si=EoslZDseLAG7qDhh"
+        "trailerUrl": "https://www.youtube.com/embed/z-lKHRVfZXQ?si=qmv2O2dFIjjumSz-"
     },
     {
         "id": 13,
