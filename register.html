@@ -11,38 +11,38 @@
 
 <body>
     <div class="wrapper">
-        <div class="login_box">
+        <form id="register-form" class="login_box">
             <div class="login-header">
                 <span>Register</span>
             </div>
             <div class="input_box">
-                <input type="text" id="first-name" class="input-field" required>
-                <label for="first-name" class="label">First name</label>
+                <input type="text" id="firstName" name="firstName" class="input-field" required>
+                <label for="firstName" class="label">First name</label>
                 <i class="bx bx-user icon"></i>
 
             </div>
             <div class="input_box">
-                <input type="text" id="last-name" class="input-field" required>
-                <label for="last-name" class="label">Last name</label>
+                <input type="text" id="lastName" name="lastName" class="input-field" required>
+                <label for="lastName" class="label">Last name</label>
                 <i class="bx bx-user icon"></i>
             </div>
             <div class="input_box">
-                <input type="text" id="user" class="input-field" required>
-                <label for="user" class="label">Username</label>
+                <input type="text" id="username" name="username" class="input-field" required>
+                <label for="username" class="label">Username</label>
                 <i class="bx bx-user icon"></i>
             </div>
             <div class="input_box">
-                <input type="password" id="pass" class="input-field" required>
-                <label for="pass" class="label">password</label>
+                <input type="password" id="password" name="password" class="input-field" required>
+                <label for="password" class="label">Password</label>
                 <i class="bx bx-lock-alt icon"></i>
             </div>
             <div class="input_box">
-                <input type="password" id="confirm-pass" class="input-field" required>
-                <label for="confirm-pass" class="label">confirm password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" class="input-field" required>
+                <label for="confirmPassword" class="label">Confirm Password</label>
                 <i class="bx bx-lock-alt icon"></i>
             </div>
             <div class="input_box">
-                <input type="submit" class="input-submit" value="Register">
+                <button type="submit" class="input-submit">Register</button>
             </div>
             <div class="register">
                 <span>
@@ -52,8 +52,9 @@
             </div>
 
 
-        </div>
+        </form>
     </div>
+    <script src="./register.js"></script>
 </body>
 
 </html>
