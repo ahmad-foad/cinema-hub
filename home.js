@@ -14,13 +14,13 @@ function buildMovieCard(movie) {
             `
 }
 
-const hottibleMoviesContainer = document.getElementById("horrible-movies")
+const horribleMoviesContainer = document.getElementById("horrible-movies")
 
 const horribleMovies = movies.filter((movie) => {
     return movie.genre === "horrible"
 })
 
-hottibleMoviesContainer.innerHTML = horribleMovies.map((movie) => {
+horribleMoviesContainer.innerHTML = horribleMovies.map((movie) => {
     return buildMovieCard(movie)
 }).join("\n")
 

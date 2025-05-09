@@ -735,18 +735,6 @@
 
 </body>
 <script>
-    // Add an event listener to all "See Online" buttons
-    document.querySelectorAll('.see-online').forEach(button => {
-        button.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent the default link behavior
-
-            // Get the movie ID from the data-id attribute
-            const movieId = this.getAttribute('data-id');
-
-            // Redirect to the movie details page with the movie ID as a URL parameter
-            window.location.href = `movie.html?id=${movieId}`;
-        });
-    });
     const button = document.getElementById("change-color");
 
     button.addEventListener("click", () => {
