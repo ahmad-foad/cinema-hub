@@ -25,11 +25,5 @@ if (selectedItem) {
 }
 else { document.getElementById('details-title').textContent = "Item not found"; }
 
-const button = document.getElementById("change-color");
-
-button.addEventListener("click", () => {
-    document.documentElement.classList.toggle("light");
-    localStorage.setItem("theme", document.documentElement.classList.contains("light") ? "light" : "dark")
-});
 
 
