@@ -1,3 +1,5 @@
+import { setupDatabase } from "./database/setup.js"
+
 const registerForm = document.getElementById('register-form');
 const confirmPasswordInput = document.getElementById('confirmPassword');
 
@@ -44,9 +46,8 @@ registerForm.addEventListener('submit', async (event) => {
 
   connection.onupgradeneeded = (event) => {
     const database = event.target.result;
-    const store = database.createObjectStore('users', { keyPath: 'username' });
-    store.createIndex('username', 'username', { unique: true });
-  }
+    setupDatabase(database);
+  };
 
   connection.onerror = (event) => {
     console.error('Error opening database:', event.target.error);

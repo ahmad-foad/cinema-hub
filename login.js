@@ -1,3 +1,5 @@
+import { setupDatabase } from "./database/setup.js"
+
 const loginForm = document.getElementById('login-form');
 
 loginForm.addEventListener('submit', async (event) => {
@@ -19,6 +21,7 @@ loginForm.addEventListener('submit', async (event) => {
             const user = event.target.result;
             if (user && user.password === data.password) {
                 window.location.href = '/';
+                localStorage.setItem('loggedInUserName', data.username);
             } else {
                 alert('Invalid username or password.');
             }
@@ -27,5 +30,10 @@ loginForm.addEventListener('submit', async (event) => {
         request.onerror = (event) => {
             alert('Error retrieving user:', event.target.error);
         };
+    };
+
+    connection.onupgradeneeded = (event) => {
+        const database = event.target.result;
+        setupDatabase(database);
     };
 })
