@@ -6,7 +6,7 @@ loginForm.addEventListener('submit', async (event) => {
     const formData = new FormData(loginForm);
     const data = Object.fromEntries(formData);
 
-    const connection = indexedDB.open('auth', 1);
+    const connection = indexedDB.open('cinema-hub', 1);
 
     connection.onsuccess = async (event) => {
         const database = event.target.result;
