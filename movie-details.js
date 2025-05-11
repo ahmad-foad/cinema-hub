@@ -1,4 +1,5 @@
 import { movies, series } from "./data.js"
+import { setupDatabase } from "./database/setup.js";
 
 
 // Get the movie ID from the URL
@@ -26,4 +27,24 @@ if (selectedItem) {
 else { document.getElementById('details-title').textContent = "Item not found"; }
 
 
+const connection = indexedDB.open('cinema-hub', 2)
 
+connection.onsuccess = async (event) => {
+    const database = event.target.result;
+    const transaction = database.transaction('history', 'readwrite');
+    const store = transaction.objectStore('history');
+
+    const username = localStorage.getItem("loggedInUserName")
+    if (username) {
+        store.add({ username, id, type });
+    }
+}
+
+connection.onupgradeneeded = (event) => {
+    const database = event.target.result;
+    setupDatabase(database);
+};
+
+connection.onerror = (event) => {
+    console.error('Error opening database:', event.target.error);
+}

@@ -19,7 +19,7 @@ registerForm.addEventListener('submit', async (event) => {
   }
 
 
-  const connection = indexedDB.open('cinema-hub', 1)
+  const connection = indexedDB.open('cinema-hub', 2)
 
   connection.onsuccess = async (event) => {
     const database = event.target.result;
