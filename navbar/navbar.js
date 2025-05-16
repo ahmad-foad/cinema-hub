@@ -19,17 +19,3 @@ changeThemeButton.addEventListener("click", () => {
     lightIcon.style.display = isNewThemeDark ? "inline" : "none";
     localStorage.setItem("theme", isNewThemeDark ? "light" : "dark")
 });
-
-
-// user links setup
-const loginLink = document.getElementById("login-link")
-const userLink = document.getElementById("user-link")
-
-const loggedInUserName = localStorage.getItem('loggedInUserName')
-if (loggedInUserName !== null) {
-    loginLink.parentElement.style.display = "none";
-} else {
-    userLink.parentElement.style.display = "none";
-}
-
-
