@@ -18,7 +18,7 @@ if ($user && password_verify($password, $user['password'])) {
     $_SESSION['username'] = $user['username'];
 
     // Redirect to the home page after successful login
-    header('Location: /index.html');
+    header('Location: /index.php');
 } else {
     // Invalid credentials, redirect back to login page with error message
     header('Location: /login.html?error=invalid_credentials');
