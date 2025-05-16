@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -92,33 +96,9 @@
 <body>
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-          <a class="navbar-brand" href="/">Cinema Hub</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="/#movies">Movies</a></li>
-              <li class="nav-item"><a class="nav-link" href="/#series">Series</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-              <li class="nav-item"><a class="nav-link" href="About-Us.html">About Us</a></li>
-              <li class="nav-item"><button class="nav-link" id="change-color"> 
-                <i id="dark-icon" class='bx bxs-moon'></i>
-                <i id="light-icon" class='bx bxs-sun'></i>
-              </button></li>
-              <li class="nav-item"><a class="nav-link" id="login-link" href="login.html">Login</a></li>
-              <li class="nav-item"><a class="nav-link" id="user-link" href="profile.html"><i
-                    class='bx bxs-user-circle'></i></a></li>
-    
-              <script src="./navbar.js"></script>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<?php
+include 'navbar/navbar.php';
+?>
     
     <!-- Bootstrap Carousel (Image slider between navbar and movies) -->
     <!-- <div id="cinemaCarousel" class="carousel slide mt-3" data-bs-ride="carousel" data-bs-interval="4000"
@@ -169,7 +149,7 @@
                     <div class="name">
                         <h3>The Walking Dead</h3>
                     </div>
-                    <a href="Movie.html?id=2&type=series" class="btn btn-primary">See Now</a>
+                    <a href="Movie.php?id=2&type=series" class="btn btn-primary">See Now</a>
                 </div>
             </div>
             <div class="item" style="background-image: url(https://images2.alphacoders.com/114/1144782.jpg);">
@@ -177,7 +157,7 @@
                     <div class="name">
                         <h3>Lord Of The Rings</h3>
                     </div>
-                    <a href="Movie.html?id=17&type=movie" class="btn btn-primary">See Now</a>
+                    <a href="Movie.php?id=17&type=movie" class="btn btn-primary">See Now</a>
                 </div>
             </div>
             <div class="item"
@@ -186,7 +166,7 @@
                     <div class="name">
                         <h3>Better Call Saul</h3>
                     </div>
-                    <a href="Movie.html?id=6&type=series" class="btn btn-primary">See Now</a>
+                    <a href="Movie.php?id=6&type=series" class="btn btn-primary">See Now</a>
                 </div>
             </div>
             <div class="item" style="background-image: url(https://i.ytimg.com/vi/r1XnnPQ6EkE/sddefault.jpg);">
@@ -194,7 +174,7 @@
                     <div class="name">
                         <h3>The Conjuring 3</h3>
                     </div>
-                    <a href="Movie.html?id=1&type=movie" class="btn btn-primary">See Now</a>
+                    <a href="Movie.php?id=1&type=movie" class="btn btn-primary">See Now</a>
 
                 </div>
             </div>
@@ -204,7 +184,7 @@
                     <div class="name">
                         <h3>The Expanse</h3>
                     </div>
-                    <a href="Movie.html?id=19&type=series" class="btn btn-primary">See Now</a>
+                    <a href="Movie.php?id=19&type=series" class="btn btn-primary">See Now</a>
                 </div>
             </div>
             <div class="item"
@@ -213,7 +193,7 @@
                     <div class="name">
                         <h3>The Good,The Bad and The Ugly</h3>
                     </div>
-                    <a href="Movie.html?id=6&type=movie" class="btn btn-primary">See Now</a>
+                    <a href="Movie.php?id=6&type=movie" class="btn btn-primary">See Now</a>
                 </div>
             </div>
 
@@ -239,7 +219,7 @@
                         class="card-img-top" alt="The Conjuring 3">
                     <div class="card-body">
                         <h5 class="card-title">The Conjuring 3</h5>
-                        <a href="Movie.html?id=1&type=movie" class="btn btn-primary ">See Online</a>
+                        <a href="Movie.php?id=1&type=movie" class="btn btn-primary ">See Online</a>
                     </div>
                 </div>
             </div>
@@ -250,7 +230,7 @@
                         alt="Horror Movie 2">
                     <div class="card-body">
                         <h5 class="card-title">Alien</h5>
-                        <a href="Movie.html?id=2&type=movie" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=2&type=movie" class="btn btn-primary">See Online</a>
 
                     </div>
                 </div>
@@ -262,7 +242,7 @@
                         class="card-img-top" alt="Horror Movie 3">
                     <div class="card-body">
                         <h5 class="card-title">Friend Request</h5>
-                        <a href="Movie.html?id=3&type=movie" class="btn btn-primary ">See Online</a>
+                        <a href="Movie.php?id=3&type=movie" class="btn btn-primary ">See Online</a>
                     </div>
                 </div>
             </div>
@@ -273,7 +253,7 @@
                         class="card-img-top" alt="Horror Movie 4">
                     <div class="card-body">
                         <h5 class="card-title">TERRIFIER</h5>
-                        <a href="Movie.html?id=4&type=movie" class="btn btn-primary ">See Online</a>
+                        <a href="Movie.php?id=4&type=movie" class="btn btn-primary ">See Online</a>
                     </div>
                 </div>
             </div>
@@ -284,7 +264,7 @@
                         class="card-img-top" alt="Horror Movie 5">
                     <div class="card-body">
                         <h5 class="card-title">The Visit</h5>
-                        <a href="Movie.html?id=5&type=movie" class="btn btn-primary ">See Online</a>
+                        <a href="Movie.php?id=5&type=movie" class="btn btn-primary ">See Online</a>
                     </div>
                 </div>
             </div>
@@ -299,7 +279,7 @@
                         class="card-img-top" alt="The God Father">
                     <div class="card-body">
                         <h5 class="card-title">The God Father II</h5>
-                        <a href="Movie.html?id=11&type=movie" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=11&type=movie" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -310,7 +290,7 @@
                         alt="Criminal Movie 2">
                     <div class="card-body">
                         <h5 class="card-title">Se7en</h5>
-                        <a href="Movie.html?id=12&type=movie" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=12&type=movie" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -321,7 +301,7 @@
                         class="card-img-top" alt="Criminal Movie 3">
                     <div class="card-body">
                         <h5 class="card-title">Trap</h5>
-                        <a href="Movie.html?id=13&type=movie" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=13&type=movie" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -332,7 +312,7 @@
                         class="card-img-top" alt="Criminal Movie 4">
                     <div class="card-body">
                         <h5 class="card-title">Don`t Breath</h5>
-                        <a href="Movie.html?id=14&type=movie" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=14&type=movie" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -343,7 +323,7 @@
                         class="card-img-top" alt="Criminal Movie 5">
                     <div class="card-body">
                         <h5 class="card-title">I See You</h5>
-                        <a href="Movie.html?id=15&type=movie" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=15&type=movie" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -358,7 +338,7 @@
                         class="card-img-top" alt="Western Movie 1">
                     <div class="card-body">
                         <h5 class="card-title">The Good , The Bad And The Ugly</h5>
-                        <a href="Movie.html?id=6&type=movie" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=6&type=movie" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -368,7 +348,7 @@
                     <img src="https://wallpapercave.com/wp/wp5705834.jpg" class="card-img-top" alt="Western Movie 2">
                     <div class="card-body">
                         <h5 class="card-title">For A Few Dollars More</h5>
-                        <a href="Movie.html?id=7&type=movie" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=7&type=movie" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -379,7 +359,7 @@
                         class="card-img-top" alt="Western Movie 3">
                     <div class="card-body">
                         <h5 class="card-title">A Fisful Of Dollars</h5>
-                        <a href="Movie.html?id=8&type=movie" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=8&type=movie" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -390,7 +370,7 @@
                         class="card-img-top" alt="Western Movie 4">
                     <div class="card-body">
                         <h5 class="card-title">The Great Silence</h5>
-                        <a href="Movie.html?id=9&type=movie" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=9&type=movie" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -401,7 +381,7 @@
                         alt="Western Movie 5">
                     <div class="card-body">
                         <h5 class="card-title">Sanctified</h5>
-                        <a href="Movie.html?id=10&type=movie" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=10&type=movie" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -417,7 +397,7 @@
                         alt="Scientific Movie 1">
                     <div class="card-body">
                         <h5 class="card-title">Interstellar</h5>
-                        <a href="Movie.html?id=16&type=movie" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=16&type=movie" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -429,7 +409,7 @@
                     <div class="card-body">
                         <h5 class="card-title">The Lord of the Rings:<h6>The Fellowship of the Ring</h6>
                         </h5>
-                        <a href="Movie.html?id=17&type=movie" class="btn btn-primary">See Now</a>
+                        <a href="Movie.php?id=17&type=movie" class="btn btn-primary">See Now</a>
                     </div>
                 </div>
             </div>
@@ -440,7 +420,7 @@
                         class="card-img-top" alt="Scientific Movie 3">
                     <div class="card-body">
                         <h5 class="card-title">Deadpool & Wolverine</h5>
-                        <a href="Movie.html?id=18&type=movie" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=18&type=movie" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -451,7 +431,7 @@
                         class="card-img-top" alt="Scientific Movie 4">
                     <div class="card-body">
                         <h5 class="card-title">The Dark Night</h5>
-                        <a href="Movie.html?id=19&type=movie" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=19&type=movie" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -462,7 +442,7 @@
                         class="card-img-top" alt="Scientific Movie 5">
                     <div class="card-body">
                         <h5 class="card-title">Inception</h5>
-                        <a href="Movie.html?id=20&type=movie" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=20&type=movie" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -479,7 +459,7 @@
                         class="card-img-top" alt="Horror Series 1">
                     <div class="card-body">
                         <h5 class="card-title">From</h5>
-                        <a href="Movie.html?id=1&type=series" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=1&type=series" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -490,7 +470,7 @@
                         class="card-img-top" alt="Horror Series 2">
                     <div class="card-body">
                         <h5 class="card-title">Fear the Walking Dead</h5>
-                        <a href="Movie.html?id=2&type=series" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=2&type=series" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -501,7 +481,7 @@
                         class="card-img-top" alt="Horror Series 2">
                     <div class="card-body">
                         <h5 class="card-title">The Walking Dead</h5>
-                        <a href="Movie.html?id=3&type=series" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=3&type=series" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -512,7 +492,7 @@
                         alt="Horror Series 2">
                     <div class="card-body">
                         <h5 class="card-title">The Walking Dead: Daryl Dixon</h5>
-                        <a href="Movie.html?id=4&type=series" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=4&type=series" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -527,7 +507,7 @@
                         class="card-img-top" alt="Horror Series 1">
                     <div class="card-body">
                         <h5 class="card-title"> Breaking Bad</h5>
-                        <a href="Movie.html?id=5&type=series" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=5&type=series" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -538,7 +518,7 @@
                         class="card-img-top" alt="Horror Series 2">
                     <div class="card-body">
                         <h5 class="card-title">Better Call Saul</h5>
-                        <a href="Movie.html?id=6&type=series" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=6&type=series" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -549,7 +529,7 @@
                         class="card-img-top" alt="Horror Series 2">
                     <div class="card-body">
                         <h5 class="card-title">Dexter</h5>
-                        <a href="Movie.html?id=7&type=series" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=7&type=series" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -560,7 +540,7 @@
                         class="card-img-top" alt="Horror Series 2">
                     <div class="card-body">
                         <h5 class="card-title">Blood Ties</h5>
-                        <a href="Movie.html?id=8&type=series" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=8&type=series" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -570,7 +550,7 @@
                         class="card-img-top" alt="Horror Series 2">
                     <div class="card-body">
                         <h5 class="card-title">Fargo</h5>
-                        <a href="Movie.html?id=9&type=series" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=9&type=series" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -580,7 +560,7 @@
                         class="card-img-top" alt="Horror Series 2">
                     <div class="card-body">
                         <h5 class="card-title">Rogue Justice</h5>
-                        <a href="Movie.html?id=10&type=series" class="btn btn-primary">See Online</a>
+                        <a href="Movie.php?id=10&type=series" class="btn btn-primary">See Online</a>
                     </div>
                 </div>
             </div>
@@ -594,7 +574,7 @@
                             class="card-img-top" alt="Horror Series 1">
                         <div class="card-body">
                             <h5 class="card-title">24</h5>
-                            <a href="Movie.html?id=11&type=series" class="btn btn-primary">See Online</a>
+                            <a href="Movie.php?id=11&type=series" class="btn btn-primary">See Online</a>
                         </div>
                     </div>
                 </div>
@@ -605,7 +585,7 @@
                             class="card-img-top" alt="Horror Series 2">
                         <div class="card-body">
                             <h5 class="card-title">Prison Break</h5>
-                            <a href="Movie.html?id=12&type=series" class="btn btn-primary">See Online</a>
+                            <a href="Movie.php?id=12&type=series" class="btn btn-primary">See Online</a>
                         </div>
                     </div>
                 </div>
@@ -616,7 +596,7 @@
                             class="card-img-top" alt="Horror Series 2">
                         <div class="card-body">
                             <h5 class="card-title">The Punisher</h5>
-                            <a href="Movie.html?id=13&type=series" class="btn btn-primary">See Online</a>
+                            <a href="Movie.php?id=13&type=series" class="btn btn-primary">See Online</a>
                         </div>
                     </div>
                 </div>
@@ -626,7 +606,7 @@
                             class="card-img-top" alt="Horror Series 2">
                         <div class="card-body">
                             <h5 class="card-title">Arrow</h5>
-                            <a href="Movie.html?id=14&type=series" class="btn btn-primary">See Online</a>
+                            <a href="Movie.php?id=14&type=series" class="btn btn-primary">See Online</a>
                         </div>
                     </div>
                 </div>
@@ -636,7 +616,7 @@
                             class="card-img-top" alt="Horror Series 2">
                         <div class="card-body">
                             <h5 class="card-title">Banshee</h5>
-                            <a href="Movie.html?id=15&type=series" class="btn btn-primary">See Online</a>
+                            <a href="Movie.php?id=15&type=series" class="btn btn-primary">See Online</a>
                         </div>
                     </div>
                 </div>
@@ -646,7 +626,7 @@
                             class="card-img-top" alt="Horror Series 2">
                         <div class="card-body">
                             <h5 class="card-title">Reacher</h5>
-                            <a href="Movie.html?id=16&type=series" class="btn btn-primary">See Online</a>
+                            <a href="Movie.php?id=16&type=series" class="btn btn-primary">See Online</a>
                         </div>
                     </div>
                 </div>
@@ -659,7 +639,7 @@
                                 class="card-img-top" alt="Horror Series 1">
                             <div class="card-body">
                                 <h5 class="card-title">Black Mirror</h5>
-                                <a href="Movie.html?id=17&type=series" class="btn btn-primary">See Online</a>
+                                <a href="Movie.php?id=17&type=series" class="btn btn-primary">See Online</a>
                             </div>
                         </div>
                     </div>
@@ -670,7 +650,7 @@
                                 class="card-img-top" alt="Horror Series 2">
                             <div class="card-body">
                                 <h5 class="card-title">Fringe</h5>
-                                <a href="Movie.html?id=18&type=series" class="btn btn-primary">See Online</a>
+                                <a href="Movie.php?id=18&type=series" class="btn btn-primary">See Online</a>
                             </div>
                         </div>
                     </div>
@@ -681,7 +661,7 @@
                                 class="card-img-top" alt="Horror Series 2">
                             <div class="card-body">
                                 <h5 class="card-title">The Expanse</h5>
-                                <a href="Movie.html?id=19&type=series" class="btn btn-primary">See Online</a>
+                                <a href="Movie.php?id=19&type=series" class="btn btn-primary">See Online</a>
                             </div>
                         </div>
                     </div>
@@ -691,7 +671,7 @@
                                 class="card-img-top" alt="Horror Series 2">
                             <div class="card-body">
                                 <h5 class="card-title">Westworld</h5>
-                                <a href="Movie.html?id=20&type=series" class="btn btn-primary">See Online</a>
+                                <a href="Movie.php?id=20&type=series" class="btn btn-primary">See Online</a>
                             </div>
                         </div>
                     </div>
@@ -701,7 +681,7 @@
                                 class="card-img-top" alt="Horror Series 2">
                             <div class="card-body">
                                 <h5 class="card-title">Person of Interest</h5>
-                                <a href="Movie.html?id=21&type=series" class="btn btn-primary">See Online</a>
+                                <a href="Movie.php?id=21&type=series" class="btn btn-primary">See Online</a>
                             </div>
                         </div>
                     </div>
@@ -711,7 +691,7 @@
                                 class="card-img-top" alt="Horror Series 2">
                             <div class="card-body">
                                 <h5 class="card-title">Devs</h5>
-                                <a href="Movie.html?id=22&type=series" class="btn btn-primary">See Online</a>
+                                <a href="Movie.php?id=22&type=series" class="btn btn-primary">See Online</a>
                             </div>
                         </div>
                     </div>

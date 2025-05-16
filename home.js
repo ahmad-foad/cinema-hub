@@ -7,7 +7,7 @@ function buildMovieCard(movie) {
                     <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/horror-movie-poster-design-template-0a593d6547564a095f6166f10de24a4b_screen.jpg?ts=1679656233" class="card-img-top" alt="The Conjuring 3">
                     <div class="card-body">
                         <h5 class="card-title">${movie.title}</h5>
-                        <a href="Movie.html?id=1&type=movie" class="btn btn-primary ">See Online</a>
+                        <a href="Movie.php?id=1&type=movie" class="btn btn-primary ">See Online</a>
                     </div>
                 </div>
             </div>
@@ -33,6 +33,6 @@ document.querySelectorAll('.see-online').forEach(button => {
         const movieId = this.getAttribute('data-id');
 
         // Redirect to the movie details page with the movie ID as a URL parameter
-        window.location.href = `movie.html?id=${movieId}`;
+        window.location.href = `Movie.php?id=${movieId}`;
     });
 });
